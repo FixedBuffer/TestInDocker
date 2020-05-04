@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  unit-test:
+    build:
+      context: .
+      dockerfile: src/Servicio/Dockerfile
+      target: test
+    entrypoint:
+      - dotnet
+      - test
+      - --logger
+      - trx;LogFileName=/test-results/unit-test-results.trx
+      - --configuration
+      - Release
+      - --no-build
+      - /p:CollectCoverage=true
+      - /p:CoverletOutputFormat="opencover,cobertura"
+      - /p:CoverletOutput=/test-results/
+    volumes:
+    - ./test-results/unit-test-results:/test-results

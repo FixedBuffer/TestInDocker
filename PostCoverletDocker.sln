@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-src", "1-src", "{CD55F523-379A-4627-AA3B-C0C8384E65B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-test", "2-test", "{5EB52D68-D4FE-48BA-B222-EF1DD340FEAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{DC55581E-391D-4AFB-BCBF-69EABEB44F08}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose-test.yml = docker-compose-test.yml
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicio", "src\Servicio\Servicio.csproj", "{1A292E8F-717C-48AF-A61E-21DB2FF53800}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "test\UnitTests\UnitTests.csproj", "{3B642011-53A7-4E6F-AE14-D6C8F9FA76CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A292E8F-717C-48AF-A61E-21DB2FF53800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A292E8F-717C-48AF-A61E-21DB2FF53800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A292E8F-717C-48AF-A61E-21DB2FF53800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A292E8F-717C-48AF-A61E-21DB2FF53800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B642011-53A7-4E6F-AE14-D6C8F9FA76CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B642011-53A7-4E6F-AE14-D6C8F9FA76CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B642011-53A7-4E6F-AE14-D6C8F9FA76CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B642011-53A7-4E6F-AE14-D6C8F9FA76CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A292E8F-717C-48AF-A61E-21DB2FF53800} = {CD55F523-379A-4627-AA3B-C0C8384E65B6}
+		{3B642011-53A7-4E6F-AE14-D6C8F9FA76CF} = {5EB52D68-D4FE-48BA-B222-EF1DD340FEAC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F498AD0-FD5F-4785-8BCB-B8E4A17B76FE}
+	EndGlobalSection
+EndGlobal
